@@ -1,21 +1,24 @@
 {
   "name": "hackernews2discord",
   "version": "1.0.0",
-  "description": "Posts top stories from Hacker News to Discord via webhook",
-  "main": "topNews.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "Enrico Lamperti",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/elamperti/HackerNews2Discord.git"
   },
-  "author": "Enrico Lamperti",
+  "main": "index.ts",
+  "devDependencies": {
+    "@types/node": "^22.14.1"
+  },
   "bugs": {
     "url": "https://github.com/elamperti/HackerNews2Discord/issues"
   },
+  "description": "Posts top stories from Hacker News to Discord via webhook",
   "homepage": "https://github.com/elamperti/HackerNews2Discord#readme",
+  "scripts": {
+    "dev": "bun run index.ts"
+  },
   "dependencies": {
-    "dotenv": "^6.0.0"
+    "croner": "^9.0.0"
   }
 }
